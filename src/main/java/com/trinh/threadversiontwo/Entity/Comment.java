@@ -7,6 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,6 +28,6 @@ public class Comment {
     int userId;
 
     String content;
-    String createdAt;
+    LocalDateTime createdAt;
     boolean isDeleted;
 }

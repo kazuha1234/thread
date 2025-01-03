@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -29,5 +30,5 @@ public class Follow {
     @Column(nullable = false)
     boolean isFollowed;
 
-    Date createdAt;
+    LocalDateTime createdAt;
 }

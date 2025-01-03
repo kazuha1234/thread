@@ -7,6 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -26,6 +29,6 @@ public class Notification {
 
     String type;
     String content;
-    String createdAt;
+    LocalDateTime createdAt;
     boolean isRead;
 }

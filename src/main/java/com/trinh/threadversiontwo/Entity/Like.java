@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -31,7 +32,7 @@ public class Like {
     int commentId;
 
     @Column(nullable = false)
-    Date createdAt;
+    LocalDateTime createdAt;
 
     @Column(nullable = false)
     boolean isDeleted;
